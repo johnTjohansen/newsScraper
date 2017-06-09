@@ -25,7 +25,7 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-mongoose.connect()
+mongoose.connect("mongodb://heroku_t8zh44qn:jbemo0btta5tigfm0krtle2lpv@ds117592.mlab.com:17592/heroku_t8zh44qn");
 var db = mongoose.connection;
 
 db.on("error", function(error) {
